@@ -49,6 +49,7 @@ let blockChain: Block[] = [genesisBlock];
 
 //? 가장 최근 추가된 블록을 반환
 const getLatestBlock = (): Block => blockChain[blockChain.length - 1];
+//? Date.getTime(): 1970 년 1 월 1 일 00:00:00 UTC와 주어진 날짜 사이의 경과 시간 (밀리 초)을 반환
 const getNewTimeStamp = (): number => Math.round(new Date().getTime() / 1000);
 
 const createNewBlock = (data: string): Block => {
